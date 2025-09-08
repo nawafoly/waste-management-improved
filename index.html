@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+
+  <!-- ✅ ضبط العرض للموبايل + دعم النوتش -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
+  />
+
+  <!-- ✅ يمنع iOS من تحويل الأرقام/الجوال إلى روابط تلقائيًا -->
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+
+  <!-- ✅ تحسين دعم اللغة العربية -->
+  <meta name="language" content="ar" />
+  <meta name="content-language" content="ar" />
+
+  <!-- ✅ خطوط عربية محسنة من Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- ✅ تحسين أداء الخطوط -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- اختياري: لون شريط العنوان في أندرويد و iOS -->
+  <meta name="theme-color" content="#059669" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="إدارة النفايات" />
+
+  <!-- ✅ تحسين SEO للمحتوى العربي -->
+  <meta name="description" content="نظام شامل لإدارة النفايات والمبيعات والمخزون مع تحليلات متقدمة وواجهة عربية سهلة الاستخدام" />
+  <meta name="keywords" content="إدارة النفايات, المبيعات, المخزون, التحليلات, نظام إدارة, عربي, RTL" />
+  <meta name="author" content="نظام إدارة النفايات" />
+
+  <!-- ✅ Open Graph للمشاركة الاجتماعية -->
+  <meta property="og:title" content="نظام إدارة النفايات والمبيعات" />
+  <meta property="og:description" content="نظام شامل لإدارة النفايات والمبيعات والمخزون مع تحليلات متقدمة" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_SA" />
+
+  <title>نظام إدارة النفايات والمبيعات</title>
+
+  <!-- ✅ تحسينات CSS أساسية لـ RTL -->
+  <style>
+    /* تحسين عرض الخطوط العربية */
+    * {
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* تحسين اتجاه النص للعربية */
+    html {
+      direction: rtl;
+      text-align: right;
+    }
+
+    body {
+      font-family: 'Tajawal', 'Cairo', system-ui, -apple-system, sans-serif;
+      font-display: swap;
+    }
+
+    /* تحسين عرض الأرقام العربية */
+    .arabic-numbers {
+      font-variant-numeric: tabular-nums;
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+
+    /* تحسين عرض التواريخ */
+    input[type="date"], input[type="time"], input[type="datetime-local"] {
+      direction: ltr;
+      text-align: left;
+    }
+
+    /* تحسين عرض الحقول الرقمية */
+    input[type="number"] {
+      direction: ltr;
+      text-align: right;
+    }
+
+    /* تحسين عرض الجداول */
+    table {
+      direction: rtl;
+    }
+
+    /* تحسين عرض النصوص المختلطة */
+    .mixed-content {
+      unicode-bidi: plaintext;
+    }
+
+    /* تحسين عرض الأيقونات */
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* تحسين عرض الأزرار */
+    button, .btn {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* تحسين عرض القوائم المنسدلة */
+    select {
+      text-align-last: right;
+    }
+
+    /* تحسين عرض النصوص الطويلة */
+    .text-content {
+      line-height: 1.6;
+      word-spacing: 0.1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="./src/index.tsx"></script>
+</body>
+
+</html>
+

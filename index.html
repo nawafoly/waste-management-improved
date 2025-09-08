@@ -1,70 +1,52 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-<!-- العنوان -->
-<title>سيخ و شيش | نظام إدارة الهدر والمبيعات</title>
-<meta name="application-name" content="سيخ و شيش" />
-<meta name="apple-mobile-web-app-title" content="سيخ و شيش" />
-<meta name="theme-color" content="#111827" />
-
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/waste-management-improved/favicon.ico" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-<!-- (اختياري) Manifest -->
-<link rel="manifest" href="/site.webmanifest" />
-
-<!-- (اختياري) إن كان عندك شعار SVG بدل vite.svg -->
-<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
 
-  <!-- ✅ ضبط العرض للموبايل + دعم النوتش -->
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
-  />
+  <!-- العنوان واسم التطبيق -->
+  <title>سيخ و شيش | نظام إدارة الهدر والمبيعات</title>
+  <meta name="application-name" content="سيخ و شيش" />
+  <meta name="apple-mobile-web-app-title" content="سيخ و شيش" />
+  <meta name="theme-color" content="#111827" />
 
-  <!-- ✅ يمنع iOS من تحويل الأرقام/الجوال إلى روابط تلقائيًا -->
+  <!-- العرض للموبايل + دعم النوتش -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
 
-  <!-- ✅ تحسين دعم اللغة العربية -->
+  <!-- تحسين دعم العربية -->
   <meta name="language" content="ar" />
   <meta name="content-language" content="ar" />
 
-  <!-- ✅ خطوط عربية محسنة من Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- ✅ تحسين أداء الخطوط -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-  <!-- اختياري: لون شريط العنوان في أندرويد و iOS -->
-  <meta name="theme-color" content="#059669" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="إدارة النفايات" />
-
-  <!-- ✅ تحسين SEO للمحتوى العربي -->
-  <meta name="description" content="نظام شامل لإدارة النفايات والمبيعات والمخزون مع تحليلات متقدمة وواجهة عربية سهلة الاستخدام" />
+  <!-- SEO / Open Graph -->
+  <meta name="description"
+    content="نظام شامل لإدارة النفايات والمبيعات والمخزون مع تحليلات متقدمة وواجهة عربية سهلة الاستخدام" />
   <meta name="keywords" content="إدارة النفايات, المبيعات, المخزون, التحليلات, نظام إدارة, عربي, RTL" />
-  <meta name="author" content="نظام إدارة النفايات" />
-
-  <!-- ✅ Open Graph للمشاركة الاجتماعية -->
-  <meta property="og:title" content="نظام إدارة النفايات والمبيعات" />
+  <meta name="author" content="سيخ و شيش" />
+  <meta property="og:title" content="سيخ و شيش | نظام إدارة الهدر والمبيعات" />
   <meta property="og:description" content="نظام شامل لإدارة النفايات والمبيعات والمخزون مع تحليلات متقدمة" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ar_SA" />
 
-  <title>نظام إدارة النفايات والمبيعات</title>
+  <!-- Favicon / Icons (ضع الملفات في public/) -->
+  <link rel="icon" type="image/x-icon" href="/waste-management-improved/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- ✅ تحسينات CSS أساسية لـ RTL -->
+  <!-- خطوط عربية -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+
+  <!-- تحسينات RTL بسيطة -->
   <style>
-    /* تحسين عرض الخطوط العربية */
     * {
       font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
       text-rendering: optimizeLegibility;
@@ -72,7 +54,6 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* تحسين اتجاه النص للعربية */
     html {
       direction: rtl;
       text-align: right;
@@ -83,60 +64,35 @@
       font-display: swap;
     }
 
-    /* تحسين عرض الأرقام العربية */
     .arabic-numbers {
       font-variant-numeric: tabular-nums;
       direction: ltr;
       unicode-bidi: embed;
     }
 
-    /* تحسين عرض التواريخ */
-    input[type="date"], input[type="time"], input[type="datetime-local"] {
+    input[type="date"],
+    input[type="time"],
+    input[type="datetime-local"] {
       direction: ltr;
       text-align: left;
     }
 
-    /* تحسين عرض الحقول الرقمية */
     input[type="number"] {
       direction: ltr;
       text-align: right;
     }
 
-    /* تحسين عرض الجداول */
-    table {
-      direction: rtl;
-    }
-
-    /* تحسين عرض النصوص المختلطة */
-    .mixed-content {
-      unicode-bidi: plaintext;
-    }
-
-    /* تحسين عرض الأيقونات */
-    .icon {
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    /* تحسين عرض الأزرار */
-    button, .btn {
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    /* تحسين عرض القوائم المنسدلة */
     select {
       text-align-last: right;
     }
 
-    /* تحسين عرض النصوص الطويلة */
     .text-content {
       line-height: 1.6;
       word-spacing: 0.1em;
     }
   </style>
-  <script type="module" crossorigin src="/waste-management-improved/assets/index-0XbpJcFg.js"></script>
-  <link rel="stylesheet" crossorigin href="/waste-management-improved/assets/index-YR3WhZ4S.css">
+  <script type="module" crossorigin src="/waste-management-improved/assets/index-D_Htw25u.js"></script>
+  <link rel="stylesheet" crossorigin href="/waste-management-improved/assets/index-Bo3ED0q_.css">
 </head>
 
 <body>
@@ -144,4 +100,3 @@
 </body>
 
 </html>
-

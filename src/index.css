@@ -121,7 +121,7 @@ body {
 
 /* تبويبات */
 .btn.tab {
-  background: #F9FAFB;
+  background: #cbced1;
   color: #4B5563;
   border: 1px solid var(--border);
   position: relative;
@@ -189,8 +189,11 @@ body {
 .alert.error { background: #FEF2F2; color: #991B1B; border: 1px solid #FECACA; }
 
 /* رؤوس البطاقات */
-.card-header { border-bottom: 1px solid var(--border); margin: -16px -16px 16px -16px; padding: 16px; background: #F9FAFB; border-radius: 16px 16px 0 0; }
-.card-title { font-size: 16px; font-weight: 700; margin: 0; color: var(--text); }
+.card-header { border-bottom: 1px solid var(--border); margin: -16px -16px 16px -16px; padding: 16px; background: #cbced1; border-radius: 16px 16px 0 0; }
+.card-title {     font-size: 16px !important;
+    font-weight: 700;
+    margin: 0;
+    color: #111827; }
 
 /* إحصائيات */
 .stats-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 16px; margin-bottom: 24px; }
@@ -292,3 +295,12 @@ html.dark .sticky-header { background: rgba(18,18,18,.95); border-bottom-color: 
 html.dark .alert.success { background:#064E3B; color:#A7F3D0; border-color:#065F46; }
 html.dark .alert.warning { background:#5B3B05; color:#FDE68A; border-color:#92400E; }
 html.dark .alert.error   { background:#3B1F25; color:#000; border-color: var(--error); }
+
+
+
+/*____________________________ */
+
+.kpi > div > div:nth-child(2) {
+  color: black; /* أو #000000 */
+}
+
